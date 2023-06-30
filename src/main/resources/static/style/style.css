@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@import url('style_Reset.css');
+
+
+/* div.Wrap 공통사항 시작 */
+div.wrap {
+    padding: 10px;
+    border: 4px solid #aaa;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+/* div.Wrap 공통사항 끝 */
+
+/* 거래내역 (메인페이지) 시작 */
+div#wrapMain {
+    width: 660px;
+}
+	/* header#header 시작 */
+header#header {	justify-content: space-between;	}
+h1 {	margin: 20px 0 10px 40px;	}
+li {	margin: 24px 6px 10px;	}
+button {	font-weight: bold; 	}
+	/* header#header 끝 */
+
+	/* main#main div#headerRow 목록 출력 시작 */
+input {	font-size: 18px;	padding: 4px 12px;
+					margin: 10px 12px;	}
+
+div#wrap {	font-size: 20px; 	}
+button {	font-size: 16px;	padding: 4px 16px;	}
+button:hover {	font-weight: bold; cursor: pointer;	}				
+
+#main div.listHeader {	width: 100%;	font-size: 19px; font-weight: bold; 
+					margin-top: 20px; 
+					background-color: rgba(0, 128, 255, 0.1);	}
+#main div.listHeader span {	line-height: 46px;	}	
+#main div.listRow {	width: 100%;	border-bottom: 1px solid #aaa;}
+#main div.listRow span {	line-height: 40px;	}					
+#main div.listColumn span {	text-align: center;		}					
+#main div.listColumn span:nth-child(1) {	width: 70px;	}					
+#main div.listColumn span:nth-child(2) { 	flex: 1;	}					
+#main div.listColumn span:nth-child(3) { 	flex: 1;	}		
+#main div.listColumn span:nth-child(4) { 	flex: 1;	}		
+#main div.listColumn span:nth-child(5) { 	flex: 1;	}
+	/* main#main div#headerRow 목록 출력 끝 */
+	
+	/* main#main 게시글 상세보기 관련 CSS 시작 */
+#main div.listRow:hover { 	background-color: rgba(0, 128, 255, 0.1);	
+							cursor: pointer; }
+	/* main#main 게시글 상세보기 관련 CSS 끝 */						
+							
+	
+	/* main#main div#searchArea 검색 시작 */
+#main div#searchArea {	margin-left: 80px; justify-content: center;
+						align-items: center;		}
+#main div#searchArea span {	font-size: 18.5px;	}							
+#main div#searchArea button {	height: 34px;	}
+	/* main#main div#searchArea 검색 끝 */
+
+/* 거래내역 (메인페이지) 끝 */
+
+
+
+/* 신규계좌등록 시작 */
+div#wrapReg {
+    width: 500px;
+}
+#wrapReg hr {	width: 460px; margin: 0 auto;	}
+#wrapReg div#regArea {	width: 340px;	margin: 0 auto;	}
+#wrapReg div#regArea label {	/* border: 1px solid #000; */	display: block;	}
+#wrapReg div#regArea label span {	width: 80px; 
+									font-size: 18px; 	font-weight: bold; 
+									display: inline-block;	}
+#wrapReg div#regArea label input {	padding: 6px 10px;	}	
+
+	/* 등록 버튼 영역 시작 */
+#wrapReg div#regBtnArea {	justify-content: center;	}				
+#wrapReg div#regBtnArea button {	padding: 7px 22px; margin: 0 10px;	}	
+	/* 등록 버튼 영역 끝 */				
+/* 신규계좌등록 끝 */
+
+
+/* 입출금 거래등록 시작 */
+div#wrapDealReg {
+    width: 670px;
+}
+#wrapDealReg hr {	width: 640px; margin: 0 auto;	}
+
+
+	/* 입출금 정보 입력 시작 div#dealInfoArea */
+#wrapDealReg div#regDealArea {	width: 600px; /* border: 1px solid #08f; */	
+					margin: 0 auto; }	
+/* div#regDealArea form#dealRegForm {	border: 1px solid #f80;		}	 */
+	
+div#regDealArea div#dealInfoArea {	width: 600px; margin-bottom: 20px; }	
+div#dealInfoArea>div {	padding: 10px; /* border: 1px solid #000;	 */
+						flex: 1; }	
+	/* 입출금 정보 입력 끝 div#dealInfoArea */
+
+
+#wrapDealReg div#accountNoArea label {	/* border: 1px solid #000; */	display: block;	}
+#wrapDealReg div#accountNoArea label span {	width: 120px; 
+									font-size: 18px; 	font-weight: bold; 
+									display: inline-block;	}
+#wrapDealReg div#accountNoArea label select {	font-size: 16px;
+										padding: 2px 14px;		}	
+
+
+										
+#wrapDealReg div#accountNoArea input#memo {	width: 116px;	padding: 2px 8px;	
+											margin-left: 0; }
+#wrapDealReg div#accountNoArea label input {	padding: 6px 10px;	}
+
+#wrapDealReg div#dealMoneyArea {	padding-top: 0; padding-left: 40px;	}
+#wrapDealReg div#dealMoneyArea label span {	 font-size: 18px; 	font-weight: bold; 
+									display: inline-block;	}
+#wrapDealReg div#dealMoneyArea label input[type=radio] {	width: 18px; height: 18px;
+												margin-right: 40px;
+												transform: translateY(4px);	}
+#wrapDealReg div#dealMoneyArea label input[type=text] {	width: 160px;		}												
+#wrapDealReg div#dealMoneyArea div#balanceArea { font-size: 19px;  font-weight: bold;
+												padding-left: 64px;		}									
+									
+									
+				
+
+/* 등록 버튼 영역 시작 */
+#wrapDealReg div#regDealBtnArea {	justify-content: center;	}				
+#wrapDealReg div#regDealBtnArea button {	padding: 7px 22px; margin: 0 10px;	}	
+	/* 등록 버튼 영역 끝 */				
+/* 입출금 거래등록 끝 */
+
+
+/* 거래내역 상세보기 시작 */
+div#wrapView {
+    width: 620px;
+}
+#wrapView h1 {	font-size: 26px; margin-left: 10px;	}
+
+div#viewBtnArea { text-align: right; margin: 10px 80px;		}
+
+#wrapView main#main div.viewPrn {	padding: 16px 0 6px 20px;
+								border-bottom: 1px dotted #000;		}
+#wrapView .viewPrn span {	font-size: 18px;		}								
+#wrapView .viewPrn span:nth-child(1) {	width: 70px;	text-align: center;	
+										margin-right: 50px;}
+/* 거래내역 상세보기 끝 */
+
+
+
+/* 거래내역 메모수정 시작 */
+
+#modInputArea span:nth-child(1) { transform: translateY(6px);}
+#modInputArea span input {	margin: 0;	}
+/* 거래내역 메모수정 끝 */
+
+
